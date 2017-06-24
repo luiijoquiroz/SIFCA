@@ -121,3 +121,4 @@ C:\Users\Luis Quiroz\documents\visual studio 2017\Projects\SIFCA\SIFCA\bin\es\Mi
 C:\Users\Luis Quiroz\documents\visual studio 2017\Projects\SIFCA\SIFCA\bin\es\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\Luis Quiroz\documents\visual studio 2017\Projects\SIFCA\SIFCA\obj\Debug\SIFCA.dll
 C:\Users\Luis Quiroz\documents\visual studio 2017\Projects\SIFCA\SIFCA\obj\Debug\SIFCA.pdb
+C:\Users\Luis Quiroz\documents\visual studio 2017\Projects\SIFCA\SIFCA\obj\Debug\SIFCA.csprojResolveAssemblyReference.cache
