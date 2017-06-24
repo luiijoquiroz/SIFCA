@@ -1,0 +1,26 @@
+﻿@model SIFCA.Models.TipodeSocio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TipodeSocio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCPR)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TIPSOC }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

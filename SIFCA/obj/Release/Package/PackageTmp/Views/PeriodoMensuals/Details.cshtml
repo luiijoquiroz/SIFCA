@@ -1,0 +1,90 @@
+﻿@model SIFCA.Models.PeriodoMensual
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PeriodoMensual</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CODEJERC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODEJERC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCPR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHINI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHINI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHFIN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHFIN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STATUS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STATUS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRACT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHACT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CODPER }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

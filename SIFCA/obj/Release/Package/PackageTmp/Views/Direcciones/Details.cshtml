@@ -1,0 +1,122 @@
+﻿@model SIFCA.Models.Direcciones
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Direcciones</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DRCCN1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DRCCN1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DRCCN2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DRCCN2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NUMERO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NUMERO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CODEDO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODEDO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CIUDAD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CIUDAD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CDPSTL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CDPSTL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TELMOV)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TELMOV)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TELHAB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TELHAB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TELOFI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TELOFI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRACT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHACT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CODDIR }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,66 @@
+﻿@model SIFCA.Models.PersonalesSocio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PersonalesSocio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CISOC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CISOC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APLLDO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APLLDO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FHCNAC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FHCNAC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EDOCVL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EDOCVL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CODDIR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODDIR)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDSOC }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

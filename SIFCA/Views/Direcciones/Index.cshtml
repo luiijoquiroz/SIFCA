@@ -1,0 +1,105 @@
+﻿@model IEnumerable<SIFCA.Models.Direcciones>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DRCCN1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DRCCN2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NUMERO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODEDO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CIUDAD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CDPSTL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELMOV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELHAB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELOFI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USRCRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FCHCRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USRACT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FCHACT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DRCCN1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DRCCN2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NUMERO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODEDO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CIUDAD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CDPSTL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TELMOV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TELHAB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TELOFI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USRCRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FCHCRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USRACT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FCHACT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CODDIR }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CODDIR }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CODDIR })
+        </td>
+    </tr>
+}
+
+</table>

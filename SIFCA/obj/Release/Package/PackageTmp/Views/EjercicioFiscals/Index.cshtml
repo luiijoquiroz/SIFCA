@@ -1,0 +1,69 @@
+﻿@model IEnumerable<SIFCA.Models.EjercicioFiscal>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FCHINI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FCHFIN)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USRCRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FCHCRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USRACT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FCHACT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCPR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FCHINI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FCHFIN)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USRCRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FCHCRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USRACT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FCHACT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CODEJERC }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CODEJERC }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CODEJERC })
+        </td>
+    </tr>
+}
+
+</table>

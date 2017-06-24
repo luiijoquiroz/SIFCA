@@ -1,0 +1,50 @@
+﻿@model SIFCA.Models.CatalogodeCuenta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CatalogodeCuenta</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCPR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SUBNVL)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SUBNVL)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPCTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPCTA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.INDCDH)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.INDCDH)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CTABCO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

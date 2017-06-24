@@ -1,0 +1,69 @@
+﻿@model IEnumerable<SIFCA.Models.RolesporGrupoDirectivo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CODGRP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODROL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REFRNC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USRCRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FCHCRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USRACT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FCHACT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODGRP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODROL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REFRNC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USRCRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FCHCRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USRACT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FCHACT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CDRLGR }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CDRLGR }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CDRLGR })
+        </td>
+    </tr>
+}
+
+</table>

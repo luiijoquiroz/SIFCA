@@ -1,0 +1,34 @@
+﻿@model SIFCA.Models.ConceptodeNomina
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ConceptodeNomina</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCPR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TIPMVTO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TIPMVTO)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CODNOM }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

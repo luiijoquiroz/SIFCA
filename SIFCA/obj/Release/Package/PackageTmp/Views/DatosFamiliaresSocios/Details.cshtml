@@ -1,0 +1,90 @@
+﻿@model SIFCA.Models.DatosFamiliaresSocio
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DatosFamiliaresSocio</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.REGIDX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REGIDX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CIFLIA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CIFLIA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FHCNAC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FHCNAC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PRNTSC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PRNTSC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRACT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHACT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CISOC }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

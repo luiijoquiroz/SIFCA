@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Socios Page";
+}
+
+<div class="jumbotron">
+    <h2>Socios</h2>
+    <p class="lead">Registro para Socios</p>
+     @Html.ActionLink("Datos Personales", "Index", "PersonalesSocios", new { area = "" }, new { @class = "navbar-brand" })
+     @Html.ActionLink("Datos Laborales", "Index", "LaboralesSocios", new { area = "" }, new { @class = "navbar-brand" })
+     @Html.ActionLink("Datos Familiares", "Index", "FamiliarSocios", new { area = "" }, new { @class = "navbar-brand" })
+</div>
+
+

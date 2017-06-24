@@ -1,0 +1,74 @@
+﻿@model SIFCA.Models.TipodePrestamos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TipodePrestamos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UnidaddeTiempo.DESCPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnidaddeTiempo.DESCPR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCPR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TSAPMO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TSAPMO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CANTMP)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CANTMP)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTAPMO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTAPMO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTAINT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTAINT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STATUS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STATUS)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CODTIP }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

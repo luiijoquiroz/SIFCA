@@ -1,0 +1,99 @@
+﻿@model IEnumerable<SIFCA.Models.LaboralesSocio>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CODNOM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODDEP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODCRG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FINEMP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FINCAH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SUELDO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APRTCA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPSOC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODBCO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CTABCO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.STATUS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODDIR)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODNOM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODDEP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODCRG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FINEMP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FINCAH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SUELDO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APRTCA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPSOC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODBCO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CTABCO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.STATUS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODDIR)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CISOC }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CISOC }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CISOC })
+        </td>
+    </tr>
+}
+
+</table>

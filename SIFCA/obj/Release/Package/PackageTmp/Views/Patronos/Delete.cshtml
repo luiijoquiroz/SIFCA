@@ -1,0 +1,128 @@
+﻿@model SIFCA.Models.Patrono
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Patrono</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.REGIDX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.REGIDX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NOMBRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HRAOFI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HRAOFI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CODSEC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODSEC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NRORIF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NRORIF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CODDIR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODDIR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PAGWEB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PAGWEB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CODRDS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODRDS)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIRLOG)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIRLOG)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRACT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHACT)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

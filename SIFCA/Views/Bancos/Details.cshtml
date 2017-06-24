@@ -1,0 +1,58 @@
+﻿@model SIFCA.Models.Banco
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Banco</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCPR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CTABCO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTABCO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CODCTA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CODCTA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DIRBCO)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DIRBCO)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.STATUS)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.STATUS)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CODBCO }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

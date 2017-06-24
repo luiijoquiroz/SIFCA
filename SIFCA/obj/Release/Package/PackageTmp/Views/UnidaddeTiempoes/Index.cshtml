@@ -1,0 +1,51 @@
+﻿@model IEnumerable<SIFCA.Models.UnidaddeTiempo>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRIODT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USRCRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.USRACT)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCPR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRIODT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USRCRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.USRACT)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CODUND }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CODUND }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CODUND })
+        </td>
+    </tr>
+}
+
+</table>

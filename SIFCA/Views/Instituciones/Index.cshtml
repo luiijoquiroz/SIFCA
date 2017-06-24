@@ -1,0 +1,87 @@
+﻿@model IEnumerable<SIFCA.Models.Instituciones>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HRAOFI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SUDECA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODSEC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NRORIF)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ACRNIM)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODDIR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CODRDS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DIRLOG)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PAGWEB)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HRAOFI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SUDECA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODSEC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NRORIF)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ACRNIM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODDIR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CODRDS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DIRLOG)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PAGWEB)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.REGIDX }) |
+            @Html.ActionLink("Details", "Details", new { id=item.REGIDX }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.REGIDX })
+        </td>
+    </tr>
+}
+
+</table>

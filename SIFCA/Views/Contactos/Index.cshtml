@@ -1,0 +1,69 @@
+﻿@model IEnumerable<SIFCA.Models.Contacto>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TRTMNT)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APLLDO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELMOV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELHAB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TELOFI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DIRCOR)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TRTMNT)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APLLDO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TELMOV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TELHAB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TELOFI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DIRCOR)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CODCNT }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CODCNT }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CODCNT })
+        </td>
+    </tr>
+}
+
+</table>

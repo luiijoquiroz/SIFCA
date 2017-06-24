@@ -1,0 +1,39 @@
+﻿@model IEnumerable<SIFCA.Models.ConceptodeNomina>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPMVTO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.DESCPR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPMVTO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CODNOM }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CODNOM }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CODNOM })
+        </td>
+    </tr>
+}
+
+</table>

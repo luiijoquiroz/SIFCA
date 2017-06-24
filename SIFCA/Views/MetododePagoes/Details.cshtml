@@ -1,0 +1,66 @@
+﻿@model SIFCA.Models.MetododePago
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MetododePago</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DESCPR)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DESCPR)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MNTOMX)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MNTOMX)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHCRE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHCRE)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.USRACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.USRACT)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FCHACT)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FCHACT)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CODMTD }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

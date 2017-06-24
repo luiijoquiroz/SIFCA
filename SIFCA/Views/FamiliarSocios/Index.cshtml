@@ -1,0 +1,63 @@
+﻿@model IEnumerable<SIFCA.Models.FamiliarSocio>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CIFLIA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CISOC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.REGIDX)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NOMBRE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FHCNAC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PRNTSC)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CIFLIA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CISOC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.REGIDX)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NOMBRE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FHCNAC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PRNTSC)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDFAM }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDFAM }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDFAM })
+        </td>
+    </tr>
+}
+
+</table>
